@@ -1,5 +1,88 @@
+body {
+  margin: 0;
+  background-color: lightslategrey;
+}
+
 .App {
+  max-width: 100%;
+  border: 5px solid lightblue;
+  background-color: lightgray;
+}
+
+.header {
+  margin: 0 10px;
   text-align: center;
+}
+
+.header h1 {
+  background-color: lightcyan;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  box-shadow: 0 0 10px gray;
+}
+
+.balance {
+  display: flex;
+  justify-content: space-around;
+  background-color: slateblue;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.income {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightseagreen;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.expense {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px gray;
+}
+
+.list {
+  padding: 10px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.form {
+  padding: 10px;
+}
+
+.form input {
   width: 100%;
-  border: 2px solid lightblue;
+  padding: 5px;
+  margin: 5px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  border-style: none;
+  box-shadow: 0 0 10px gray;
+}
+
+.form label {
+  font-weight: bold;
+  text-align: left;
+  margin: 0 5px;
+}
+
+.form input[type="submit"] {
+  font-weight: bold;
+  background-color: lightseagreen;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
