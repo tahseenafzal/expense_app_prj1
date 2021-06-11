@@ -3,9 +3,9 @@ import React from "react";
 const Expense = () => {
   return (
     <div>
-      <h1>
-        Expense: <br /> $300
-      </h1>
+      <h3 className="expense">
+        <span>Expense:</span> <span>$300</span>
+      </h3>
     </div>
   );
 };
