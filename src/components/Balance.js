@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TransContext } from "../TransContext";
 
 const Balance = () => {
+  const { getBalance } = useContext(TransContext);
+
   return (
     <div>
       <h2 className="balance">
-        <span>Balance:</span> <span>$300</span>
+        <span>Balance:</span> <span>${getBalance()}</span>
       </h2>
     </div>
   );
