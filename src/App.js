@@ -6,19 +6,22 @@ import Form from "./components/Form";
 import Header from "./components/Header";
 import Income from "./components/Income";
 import List from "./components/List";
+import TransProvider from "./TransContext";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Balance />
-      <Income />
-      <Expense />
-      <hr />
-      <List />
-      <hr />
-      <Form />
-    </div>
+    <TransProvider>
+      <div className="App">
+        <Header />
+        <Balance />
+        <Income />
+        <Expense />
+        <hr />
+        <List />
+        <hr />
+        <Form />
+      </div>
+    </TransProvider>
   );
 }
 
