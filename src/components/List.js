@@ -1,24 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TransContext } from "../TransContext";
 
 const List = () => {
+  const { trans } = useContext(TransContext);
+
   return (
     <div className="list">
       <h3>Transaction List</h3>
       <hr />
-      <ul>
-        <li>
-          <span>Salary</span>
-          <span>$500</span>
-        </li>
-        <li>
-          <span>Books</span>
-          <span>$200</span>
-        </li>
-        <li>
-          <span>Utility</span>
-          <span>$100</span>
-        </li>
-      </ul>
+      {trans.length > 0 ? (
+        trans.map((transListitem, ind) => {
+          return (
+            <li key={ind}>
+              <span>{transListitem.desc}</span>
+              <span>{transListitem.amount}</span>
+            </li>
+          );
+        })
+      ) : (
+        <li>No item found.</li>
+      )}
     </div>
   );
 };
