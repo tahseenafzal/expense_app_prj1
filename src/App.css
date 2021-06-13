@@ -4,9 +4,11 @@ body {
 }
 
 .App {
-  max-width: 100%;
+  max-width: 400px;
+  margin: auto;
   border: 5px solid lightblue;
   background-color: lightgray;
+  box-shadow: 0 0 10p slategray;
 }
 
 .header {
@@ -24,7 +26,7 @@ body {
 
 .balance {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: slateblue;
   padding: 10px;
   margin: 10px;
@@ -33,7 +35,7 @@ body {
 
 .income {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: lightseagreen;
   padding: 10px;
   margin: 10px;
@@ -42,7 +44,7 @@ body {
 
 .expense {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: lightcoral;
   padding: 10px;
   margin: 10px;
@@ -51,21 +53,26 @@ body {
 
 .list {
   padding: 10px;
+  list-style: none;
 }
 
 .list li {
   display: flex;
-  justify-content: space-around;
-  padding: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: azure;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px gray;
+  border-radius: 5px;
 }
 
 .form {
-  padding: 10px;
+  padding: 20px;
 }
 
 .form input {
   width: 100%;
-  padding: 5px;
   margin: 5px;
   box-sizing: border-box;
   padding: 12px 20px;
